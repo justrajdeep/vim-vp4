@@ -45,6 +45,7 @@ FILE EDITING - Perform actions on files that alter their state in Perforce.
     Add......|Vp4Add|
     Delete...|Vp4Delete|
     Edit.....|Vp4Edit|
+    Sync.....|Vp4Sync|
     Reopen...|Vp4Reopen|
     Revert...|Vp4Revert|
 
@@ -134,6 +135,9 @@ Opens current file for add.
 :Vp4Delete[!]
 Opens current file for delete.  Unloads current buffer.  Confirms before doing
 so; use [!] to skip confirmation.
+
+                                                                     *Vp4Sync*
+Syncs the current file.
 
                                                                      *Vp4Edit*
 Opens current file for edit.

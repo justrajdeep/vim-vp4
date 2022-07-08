@@ -128,6 +128,10 @@ Opens current file for add.
 Opens current file for delete.  Unloads current buffer.  Confirms before doing
 so; use [!] to skip confirmation.
 
+`:Vp4Sync`
+
+Syncs current file.
+
 `:Vp4Edit`
 
 Opens current file for edit.

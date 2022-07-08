@@ -391,6 +391,17 @@ function! vp4#PerforceEdit()
     execute 'edit ' filename
 endfunction
 
+" Call p4 sync.
+function! vp4#PerforceSync() abort
+    let filename = s:ExpandPath('%')
+    if !s:PerforceAssertExists(filename) | return | endif
+
+    call s:PerforceSystem('sync ' .filename)
+
+    " reload the file to load the synced file
+    execute 'edit ' filename
+endfunction
+
 " Call p4 revert.  Confirms before performing the revert.
 function! vp4#PerforceRevert(bang)
     let filename = s:ExpandPath('%')
